@@ -1,11 +1,14 @@
 import "./App.css";
 import img from "./spring_tree.jpg";
+import { useState } from "react";
 
 function App() {
+  const [showText, setShowText] = useState(true);
+  const toggleText = (bool) => setShowText(bool);
   return (
     <div className="App">
       <h1>Demo website</h1>
-      <p>
+      {showText && <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
         imperdiet ullamcorper urna sed fermentum. Mauris condimentum
         sollicitudin varius. Ut malesuada a purus non sagittis. Pellentesque
@@ -47,8 +50,10 @@ function App() {
         eu, elementum tristique nisl. Vivamus eu tellus leo. Vestibulum porta
         sem et enim euismod, ac tempus nulla vehicula. Cras eu volutpat felis.
         Vivamus eget mollis neque. Vestibulum at nisi purus.
-      </p>
+      </p>}
       <img src={img} alt="tree" />
+      <button onClick={() => toggleText(!showText)}>Toggle text</button>
+
     </div>
   );
 }
