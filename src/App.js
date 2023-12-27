@@ -8,31 +8,47 @@ function App() {
   return (
     <div className="App">
       <h1>Demo website</h1>
-      {showText && <p>
-      Suspendisse orci nisi, semper at lectus lacinia, luctus dignissim enim. Ut
-      eget tincidunt sem. In aliquet consequat metus in vestibulum. Sed tellus
-      massa, porta sed aliquam quis, euismod vel nibh. Proin interdum viverra
-      tortor. Sed dapibus cursus tortor, eget hendrerit est tincidunt ut.
-      Integer molestie, massa in tristique porttitor, nibh nunc auctor tellus,
-      egestas sagittis ligula velit ut tellus. Quisque et aliquet quam.
-      Suspendisse ut fermentum tellus. Donec tempor eget magna et rhoncus.
-      Pellentesque molestie consequat metus et dapibus. Aenean vehicula
-      tristique aliquet. Nam vestibulum feugiat leo vel pellentesque.
-      Suspendisse potenti. Maecenas sit amet elit augue. Ut sodales ut velit eu
-      ultricies. Cras tincidunt nunc metus, consectetur pulvinar tellus lacinia
-      sed. Ut ut laoreet augue, ut ullamcorper orci. Ut sit amet aliquet purus,
-      non rutrum ligula. Proin vitae risus ac orci viverra blandit. Vivamus
-      bibendum gravida ex blandit tempor. Integer sit amet pellentesque dolor.
-      Cras eleifend enim eu purus efficitur, nec scelerisque erat consectetur.
-      Maecenas et diam sed mauris facilisis consequat. Curabitur auctor orci ac
-      ante maximus pharetra. Curabitur consequat eget velit aliquet ultricies.
-      Sed est leo, facilisis sed nisi id, aliquam ultricies dui. Nam facilisis,
-      dolor in efficitur commodo, lectus quam maximus arcu, in condimentum
-      mauris purus quis diam. Integer non leo dictum, consequat leo ut, porta
-      mauris. Duis risus justo, blandit ac neque id, ornare vehicula velit.
-      Aliquam porta ultrices justo vitae molestie. Fusce vestibulum lectus non
-      sapien rhoncus pretium.
-      </p>}
+      {showText && (
+        <p>
+          A fallacy, is the use of invalid or otherwise faulty reasoning in the
+          construction of an argument[1][2] that may appear to be well-reasoned
+          if unnoticed. The term was introduced in the Western intellectual
+          tradition by the Aristotelian De Sophisticis Elenchis.[3] Fallacies
+          may be committed intentionally to manipulate or persuade by deception,
+          unintentionally because of human limitations such as carelessness,
+          cognitive or social biases and ignorance, or potentially due to the
+          limitations of language and understanding of language. These
+          delineations include not only the ignorance of the right reasoning
+          standard but also the ignorance of relevant properties of the context.
+          For instance, the soundness of legal arguments depends on the context
+          in which they are made.[4] Fallacies are commonly divided into
+          "formal" and "informal." A formal fallacy is a flaw in the structure
+          of a deductive argument that renders the argument invalid, while an
+          informal fallacy originates in an error in reasoning other than an
+          improper logical form.[5] Arguments containing informal fallacies may
+          be formally valid, but still fallacious.[3] A special case is a
+          mathematical fallacy, an intentionally invalid mathematical proof with
+          a concealed, or subtle, error. Mathematical fallacies are typically
+          crafted and exhibited for educational purposes, usually taking the
+          form of false proofs of obvious contradictions. The Greek philosopher
+          Aristotle (384–322 BC) was the first to systematize logical errors
+          into a list to make it easier to refute an opponent's thesis and thus
+          win an argument.[18]: 2  Aristotle's "Sophistical Refutations" (De
+          Sophisticis Elenchis) identifies thirteen fallacies. He divided them
+          up into two major types: linguistic fallacies and non-linguistic
+          fallacies, some of which depend on language and others that do
+          not.[19][20] These fallacies are called verbal fallacies and material
+          fallacies, respectively. A material fallacy is an error in what the
+          arguer is talking about, while a verbal fallacy is an error in how the
+          arguer is talking. Verbal fallacies are those in which a conclusion is
+          obtained by improper or ambiguous use of words.[21] An example of a
+          language dependent fallacy is given as a debate as to who in humanity
+          are learners: the wise or the ignorant.[18]: 3  A language-independent
+          fallacy is, for example: "Coriscus is different from Socrates."
+          "Socrates is a man." "Therefore, Coriscus is different from a
+          man."[18]: 4 (taken from wikipedia)
+        </p>
+      )}
       <img src={img} alt="autumn" />
       <button onClick={() => toggleText(!showText)}>Toggle text</button>
     </div>
